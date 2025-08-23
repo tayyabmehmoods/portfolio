@@ -1469,6 +1469,26 @@ body.light-mode .skills-list li i {
   box-shadow: 0 0 20px #2be6ff;
 }
 
+/* Custom Cursor */
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #2be6ff;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.15s ease, width 0.15s ease, height 0.15s ease;
+  z-index: 9999;
+  box-shadow: 0 0 10px #ff4b2b, 0 0 20px #ff416c;
+}
+
+
+body {
+  cursor: none; /* hides the default cursor */
+}
 /* Hide custom cursor on touch devices */
 @media (hover: none) and (pointer: coarse) {
   body {
