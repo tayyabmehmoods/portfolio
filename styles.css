@@ -1017,6 +1017,13 @@ html {
   animation: glow 4s ease-in-out infinite;
   color: #00ffc8;
 }
+.code-intro {
+  font-family: "Courier New", monospace;
+  font-size: 1.2rem;
+  color: #00ffcc; /* glowing cyan code-like color */
+  /* text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc; */
+}
+
 
 @keyframes glow {
   0% {
@@ -1039,18 +1046,6 @@ html {
     text-shadow: 0 0 2px #00ffc8;
     color: #00ffc8;
   }
-}
-.code-intro {
-  color: #ffffff;
-  font-family: 'Courier New', monospace;
-  font-size: 1.3rem;
-}
-
-.code-hello {
-  color: #ffffff;
-  font-family: 'Courier New', monospace;
-  font-size: 1.3rem;
-  margin: 0 5px;
 }
 
 
@@ -1474,3 +1469,23 @@ body.light-mode .skills-list li i {
   box-shadow: 0 0 20px #2be6ff;
 }
 
+/* Custom Cursor */
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #2be6ff;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.15s ease, width 0.15s ease, height 0.15s ease;
+  z-index: 9999;
+  box-shadow: 0 0 10px #ff4b2b, 0 0 20px #ff416c;
+}
+
+
+body {
+  cursor: none; /* hides the default cursor */
+}
