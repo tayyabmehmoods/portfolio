@@ -128,8 +128,9 @@ particlesJS("particles-js", {
       <p>
         Hi! I’m Tayyab, a Full-Stack Developer passionate about creating responsive, user-friendly web applications. I work with HTML, CSS, JavaScript, PHP, and MySQL to turn ideas into functional solutions. <br><br>
         I also have experience with Java, Python, and C++, allowing me to build efficient and robust software systems. <br><br>
-        I’ve also completed Android development using Flutter & Dart, allowing me to build cross-platform mobile apps with responsive UIs and smooth performance.
-      </p>
+
+        I’ve also completed Android development using **Kotlin**, Flutter & Dart, allowing me to build cross-platform mobile apps with responsive UIs and smooth performance.
+      </p>
 
       <a href="https://drive.google.com/file/d/1G7A3RJpjdrmGoL4jYZ5m6tKEENNcNHzw/view?usp=sharing" 
          target="_blank" 
@@ -158,6 +159,7 @@ particlesJS("particles-js", {
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" title="PHP">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" title="MySQL">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin" title="Kotlin">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" title="Flutter">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" alt="Android Studio" title="Android Studio">
     
@@ -217,7 +219,7 @@ particlesJS("particles-js", {
       <li><strong>Front-End:</strong> HTML, CSS, JavaScript</li>
       <li><strong>Back-End:</strong> PHP, MySQL</li>
       <li><strong>Languages:</strong> Java, Python, C++</li>
-      <li><strong>Android:</strong> Flutter, Dart, Android Studio</li>
+      <li><strong>Android/Mobile:</strong> **Kotlin**, Flutter, Dart, Android Studio</li>
       <li><strong>Tools:</strong> Git, VS Code, XAMPP</li>
     </ul>
   </section>
@@ -669,20 +671,20 @@ document.querySelectorAll('a, button').forEach(el => {
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <script>
- window.addEventListener('load', () => {
-  const loader = document.getElementById('loader');
-  
-  // fade out smoothly
-  loader.style.opacity = '0';
-  loader.style.pointerEvents = 'none';
-
-  // remove completely after animation
-  setTimeout(() => {
-    loader.style.display = 'none';
-  }, 500);
+ <script>
+window.addEventListener('load', () => {
+    const loader = document.getElementById('loader');
+    
+    // 1. Start the fade-out transition
+    loader.style.opacity = '0';
+    loader.style.pointerEvents = 'none'; // Prevents the invisible loader from blocking clicks
+    
+    // 2. Remove the element completely after the transition finishes (500ms)
+    setTimeout(() => {
+        loader.style.display = 'none';
+    }, 500); // Must match the transition duration set in CSS
 });
-
+</script>
 </script>
 
 
