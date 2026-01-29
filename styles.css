@@ -610,10 +610,11 @@ h1:hover, h2:hover, h3:hover {
     background: #1f1f1f;
   }
 }
-body.overflow-hidden,
-html.overflow-hidden {
+.no-scroll {
   overflow: hidden;
+  height: 100%;
 }
+
 
 
 
@@ -1227,7 +1228,8 @@ body.light-mode .skills-list li i {
 }
 .hero {
     position: relative;
-    height: 100vh;
+    min-height: 100svh; /* mobile safe */
+    min-height: 100vh;  /* fallback */
     display: flex;
     align-items: center;
     justify-content: center;
